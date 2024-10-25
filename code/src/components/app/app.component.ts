@@ -9,6 +9,7 @@ import { AddComponent } from '../Add/add.component';
       <house-card/>
       <add-root/>
     <h1>End of app component</h1>
+    <p>feito pelo Rafa</p>
   `,
   styleUrls: ['./app.component.css'],
   imports: [HouseCardComponent,AddComponent],
