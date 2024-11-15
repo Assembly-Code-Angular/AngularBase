@@ -7,23 +7,17 @@ import {  BookCardComponent } from '../bookCard/book_card.component';
   selector: 'book-list',
   template: `
   <div class="container">
-    <book-card/>
-    <book-card/>
-    <book-card/>
-    <book-card/>
-    <book-card/>
-    <book-card/>
-    <book-card/>
-    <book-card/>
-    <book-card/>
-    <book-card/>
-    <book-card/>
-    <book-card/>
-    <book-card/>
-    <book-card/>
-    <book-card/>
-    <book-card/>
-    <book-card/>
+    <book-card [pDSad]=false/>
+    <book-card [pDSad]=true/>
+    <book-card [pDSad]=false/>
+    <book-card [pDSad]=false/>
+    <book-card [pDSad]=true/>
+    <book-card [pDSad]=true/>
+    <book-card [pDSad]=true/>
+    <book-card [pDSad]=true/>
+    <book-card [pDSad]=true/>
+    <book-card [pDSad]=true/>
+    <book-card [pDSad]=true/>
   </div>
   `,
   imports: [BookCardComponent],
