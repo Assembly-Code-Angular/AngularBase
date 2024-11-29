@@ -17,6 +17,7 @@ export class BookCardComponent {
   imageSad = 'https://bettervet.com/hs-fs/hubfs/sad-and-depressed-dog-with-tears.jpg?width=734&height=413&name=sad-and-depressed-dog-with-tears.jpg'
   @Input() pDSad:Boolean = false;
 
+
   IsPintasSad() {
     if(this.pDSad){
       return this.imageSad
