@@ -19,6 +19,7 @@ export class BookCardComponent {
 
 
   IsPintasSad() {
+    console.log("1");
     if(this.pDSad){
       return this.imageSad
     }else{
