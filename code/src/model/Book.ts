@@ -1,4 +1,8 @@
+import { Text } from "@angular/compiler";
+
 export interface Book{
-    id: number;
-    pDSad: boolean;
+    id?: number;
+    nome?: string;
+    imagem?: string;
+    preco?: number;
 }

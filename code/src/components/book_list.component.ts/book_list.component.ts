@@ -11,7 +11,7 @@ import { CommonModule } from '@angular/common';
   template: `
   <div class="container">
     <p>Pintas book</p>
-    <book-card *ngFor="let book of bookList;" [pDSad]="book.pDSad"/>
+    <book-card *ngFor="let book of bookList;" [book]="book"/>
   </div>
   `,
   imports: [BookCardComponent,CommonModule],
@@ -21,16 +21,16 @@ import { CommonModule } from '@angular/common';
 export class BookListComponent {
   title = 'homes';
   bookList: Book[] = [
-      {id:1,pDSad:false},
-      {id:2,pDSad:true},
-      {id:3,pDSad:false},
-      {id:4,pDSad:false},
-      {id:5,pDSad:true},
-      {id:6,pDSad:true},
-      {id:7,pDSad:true},
-      {id:8,pDSad:true},
-      {id:9,pDSad:true},
-      {id:10,pDSad:false},
+      {id:1,nome:"O pintas ainda nao tinha nascido"},
+      {id:2,nome:"O pintas tem depressao",imagem:"https://bettervet.com/hs-fs/hubfs/sad-and-depressed-dog-with-tears.jpg?width=734&height=413&name=sad-and-depressed-dog-with-tears.jpg",preco:3.50},
+      {id:3,nome:"O pintas tomou Ansiolítico",imagem:"https://plus.unsplash.com/premium_photo-1694819488591-a43907d1c5cc?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8Y3V0ZSUyMGRvZ3xlbnwwfHwwfHx8MA%3D%3D",preco:32.50},
+      {id:4,nome:"O pintas inalou um baseado",imagem:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTufhEXstXXpYDFAnZSx6AYJlxvSyFfxoVlKQ&s",preco:22.50},
+      {id:5},
+      {id:6},
+      {id:7},
+      {id:8},
+      {id:9},
+      {id:10},
   ]
 }
 
