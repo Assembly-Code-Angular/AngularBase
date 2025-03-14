@@ -1,4 +1,5 @@
 import { Component } from "@angular/core";
+import { FetchService } from "src/fetchers/FetchComponent";
 
 @Component({
     selector: 'app-home',
