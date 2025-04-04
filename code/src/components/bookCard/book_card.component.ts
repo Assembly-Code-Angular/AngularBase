@@ -23,7 +23,7 @@ export class BookCardComponent {
   private fetchService = new FetchService();
 
     ngOnInit(): void{
-      this.fetchService.fetchData()
+      this.fetchService.fetchData("WeatherForecast")
         .then(data=> {
           this.book!.preco = data[0].summary
           console.log('Deu ' + data[0].summary)

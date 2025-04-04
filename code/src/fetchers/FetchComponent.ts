@@ -1,10 +1,10 @@
 export class FetchService{
 
-    private apiUrl = 'http://localhost:5136/WeatherForecast';
+    private apiUrl = 'http://localhost:5136/';
 
-    async fetchData(): Promise<any>{
+    async fetchData(link:string): Promise<any>{
         try{
-            const response = await fetch(this.apiUrl)
+            const response = await fetch(this.apiUrl+link)
             if(!response.ok){
                 throw new Error('Network response was not ok')
             }
@@ -12,6 +12,6 @@ export class FetchService{
         } catch(error){
             console.error('Error fetching data: ',error);
             throw error;
-        }
+        }   
     } 
 }
